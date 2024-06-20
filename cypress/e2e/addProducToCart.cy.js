@@ -1,34 +1,38 @@
+import lpselectors from '../selectors/loginPageSelectors.js'
+import ppselectors from '../selectors/productPageSelectors.js'
+import udselectors from '../selectors/userDataSelectors.js'
+
 describe('template spec', () => {
   
 
   beforeEach(() => {
     cy.fixture('data.json').then(  (userData) => {
       cy.visit(Cypress.env('baseUrl'))
-    cy.get('[data-test="username"]').type(userData[0].username);
-    cy.get('[data-test="password"]').type(userData[0].password);
-    cy.get('[data-test="login-button"]').click();})
+    cy.get(lpselectors.username).type(userData[0].username);
+    cy.get(lpselectors.password).type(userData[0].password);
+    cy.get(lpselectors.loginBtn).click();})
   })
 
   
   it('addProductsToCart', function() {
     cy.fixture('data.json').then(  (userData) => {
-    cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
-    cy.get('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
-    cy.get('[data-test="shopping-cart-link"]').click();
-    cy.get('[data-test="item-4-title-link"] > [data-test="inventory-item-name"]').should('have.text', 'Sauce Labs Backpack');
-    cy.get('[data-test="item-0-title-link"] > [data-test="inventory-item-name"]').should('have.text', 'Sauce Labs Bike Light');
-    cy.get(':nth-child(4) > [data-test="item-quantity"]').should('have.text', '1');
-    cy.get(':nth-child(3) > [data-test="item-quantity"]').should('have.text', '1');
-    cy.get('[data-test="checkout"]').click();
-    cy.get('[data-test="firstName"]').clear('J');
-    cy.get('[data-test="firstName"]').type(userData[0].firstName);
-    cy.get('[data-test="lastName"]').clear('J');
-    cy.get('[data-test="lastName"]').type(userData[0].lastName);
-    cy.get('[data-test="postalCode"]').clear('1');
-    cy.get('[data-test="postalCode"]').type(userData[0].postalCode);
-    cy.get('[data-test="continue"]').click();
-    cy.get('[data-test="finish"]').click();
-    cy.get('[data-test="back-to-products"]').click();
+    cy.get(ppselectors.product1).click();
+    cy.get(ppselectors.product2).click();
+    cy.get(ppselectors.cartButton).click();
+    cy.get(ppselectors.product1NameAssertion).should('have.text', 'Sauce Labs Backpack');
+    cy.get(ppselectors.product2NameAssertion).should('have.text', 'Sauce Labs Bike Light');
+    cy.get(ppselectors.product1quantity).should('have.text', '1');
+    cy.get(ppselectors.product2quantity).should('have.text', '1');
+    cy.get(ppselectors.checkoutButton).click();
+    cy.get(udselectors.firstName).clear('J');
+    cy.get(udselectors.firstName).type(userData[0].firstName);
+    cy.get(udselectors.lastName).clear('J');
+    cy.get(udselectors.lastName).type(userData[0].lastName);
+    cy.get(udselectors.postalCode).clear('1');
+    cy.get(udselectors.postalCode).type(userData[0].postalCode);
+    cy.get(udselectors.continueButton).click();
+    cy.get(udselectors.finishButton).click();
+    cy.get(udselectors.backToProductsButton).click();
     })
   });
 })
