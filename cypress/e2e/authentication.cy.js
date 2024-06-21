@@ -1,6 +1,6 @@
 import lpselectors from '../selectors/loginPageSelectors.js'
 
-describe('template spec', () => {
+describe('Authentication', () => {
   beforeEach(() => {
     cy.visit(Cypress.env('baseUrl'))
   })

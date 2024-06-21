@@ -43,13 +43,13 @@ Data-Driven Testing is implemented by reading test data from JSON files. This ap
 •	Cypress
  Installation
 1. Clone the repository:
-   bash
+
    git clone https://github.com/Jokili/jovana-task2
 2. Navigate to the project directory:
-   bash
+
    cd jovana-task2
 3. Install dependencies:
-   bash
+
    npm install cypress
  6. Writing Tests
 Tests are written in JavaScript and follow the structure of:
@@ -59,19 +59,24 @@ Tests are written in JavaScript and follow the structure of:
 7. Running Tests
 Tests can be run using the Cypress CLI or through the Cypress Test Runner.
  Using Cypress CLI
-bash
+
 npx cypress run
  Using Cypress Test Runner
+ Note: Test report is generated automatically under the reports directory.
 1. Open Cypress Test Runner:
-   bash
+
    npx cypress open
 2. Select the test to run from the Cypress interface.
+ Note: Test report is generated automatically on the Cypress Test Runner UI.
+
  8. Directory Structure
 |-- cypress
-    |-- fixtures
-        |-- *.json (test data files)
     |-- e2e
         |-- *.spec.js (test scripts)
+    |-- fixtures
+        |-- *.json (test data files)
+    |-- reports (test reports)
+    |-- screenshots (images of the screen when test fails)
     |-- selectors
         |-- *.js (selector files)
 |-- cypress.json (Cypress configuration)

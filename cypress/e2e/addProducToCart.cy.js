@@ -2,7 +2,7 @@ import lpselectors from '../selectors/loginPageSelectors.js'
 import ppselectors from '../selectors/productPageSelectors.js'
 import udselectors from '../selectors/userDataSelectors.js'
 
-describe('template spec', () => {
+describe('Add product to cart', () => {
   
 
   beforeEach(() => {
@@ -14,7 +14,8 @@ describe('template spec', () => {
   })
 
   
-  it('addProductsToCart', function() {
+  it('Add products to cart', function() {
+
     cy.fixture('data.json').then(  (userData) => {
     cy.get(ppselectors.product1).click();
     cy.get(ppselectors.product2).click();
@@ -34,5 +35,6 @@ describe('template spec', () => {
     cy.get(udselectors.finishButton).click();
     cy.get(udselectors.backToProductsButton).click();
     })
+
   });
 })

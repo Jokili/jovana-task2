@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-21T15:03:30.629Z",
+    "end": "2024-06-21T15:03:42.696Z",
+    "duration": 12067,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b2d8a43d-6cc6-47a0-80c6-d4af2b7347c3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\authentication.cy.js",
+      "file": "cypress\\e2e\\authentication.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fb3878de-78f8-4af8-b015-750226270cf4",
+          "title": "Authentication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "Authentication passes",
+              "timedOut": null,
+              "duration": 1190,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(_loginPageSelectors.default.userName).clear('s');\ncy.get(_loginPageSelectors.default.userName).type(credentials.username);\ncy.get(_loginPageSelectors.default.password).clear('s');\ncy.get(_loginPageSelectors.default.password).type(credentials.password);\ncy.get(_loginPageSelectors.default.loginBtn).click();\nif (credentials.status === \"passed\") {\n  cy.get(_loginPageSelectors.default.successLoginMessage).should('have.text', 'Swag Labs');\n} else {\n  cy.get(_loginPageSelectors.default.failedLoginMsg).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');\n}",
+              "err": {},
+              "uuid": "60a61f6a-a713-472b-aafa-6a716bf92a08",
+              "parentUUID": "fb3878de-78f8-4af8-b015-750226270cf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "passes",
+              "fullTitle": "Authentication passes",
+              "timedOut": null,
+              "duration": 1040,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(_loginPageSelectors.default.userName).clear('s');\ncy.get(_loginPageSelectors.default.userName).type(credentials.username);\ncy.get(_loginPageSelectors.default.password).clear('s');\ncy.get(_loginPageSelectors.default.password).type(credentials.password);\ncy.get(_loginPageSelectors.default.loginBtn).click();\nif (credentials.status === \"passed\") {\n  cy.get(_loginPageSelectors.default.successLoginMessage).should('have.text', 'Swag Labs');\n} else {\n  cy.get(_loginPageSelectors.default.failedLoginMsg).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');\n}",
+              "err": {},
+              "uuid": "bf75166a-3197-41b0-a5dd-cc2b164db70a",
+              "parentUUID": "fb3878de-78f8-4af8-b015-750226270cf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "passes",
+              "fullTitle": "Authentication passes",
+              "timedOut": null,
+              "duration": 881,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(_loginPageSelectors.default.userName).clear('s');\ncy.get(_loginPageSelectors.default.userName).type(credentials.username);\ncy.get(_loginPageSelectors.default.password).clear('s');\ncy.get(_loginPageSelectors.default.password).type(credentials.password);\ncy.get(_loginPageSelectors.default.loginBtn).click();\nif (credentials.status === \"passed\") {\n  cy.get(_loginPageSelectors.default.successLoginMessage).should('have.text', 'Swag Labs');\n} else {\n  cy.get(_loginPageSelectors.default.failedLoginMsg).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');\n}",
+              "err": {},
+              "uuid": "d701dd63-4fbd-4e63-a0b7-15cf80e40b77",
+              "parentUUID": "fb3878de-78f8-4af8-b015-750226270cf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "passes",
+              "fullTitle": "Authentication passes",
+              "timedOut": null,
+              "duration": 5999,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(_loginPageSelectors.default.userName).clear('s');\ncy.get(_loginPageSelectors.default.userName).type(credentials.username);\ncy.get(_loginPageSelectors.default.password).clear('s');\ncy.get(_loginPageSelectors.default.password).type(credentials.password);\ncy.get(_loginPageSelectors.default.loginBtn).click();\nif (credentials.status === \"passed\") {\n  cy.get(_loginPageSelectors.default.successLoginMessage).should('have.text', 'Swag Labs');\n} else {\n  cy.get(_loginPageSelectors.default.failedLoginMsg).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');\n}",
+              "err": {},
+              "uuid": "d4fa7d37-c0ed-4b21-aaf4-1cd39a204f79",
+              "parentUUID": "fb3878de-78f8-4af8-b015-750226270cf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "passes",
+              "fullTitle": "Authentication passes",
+              "timedOut": null,
+              "duration": 893,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(_loginPageSelectors.default.userName).clear('s');\ncy.get(_loginPageSelectors.default.userName).type(credentials.username);\ncy.get(_loginPageSelectors.default.password).clear('s');\ncy.get(_loginPageSelectors.default.password).type(credentials.password);\ncy.get(_loginPageSelectors.default.loginBtn).click();\nif (credentials.status === \"passed\") {\n  cy.get(_loginPageSelectors.default.successLoginMessage).should('have.text', 'Swag Labs');\n} else {\n  cy.get(_loginPageSelectors.default.failedLoginMsg).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');\n}",
+              "err": {},
+              "uuid": "f38ebad5-f110-4212-adaf-ec86c59f070e",
+              "parentUUID": "fb3878de-78f8-4af8-b015-750226270cf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "passes",
+              "fullTitle": "Authentication passes",
+              "timedOut": null,
+              "duration": 911,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(_loginPageSelectors.default.userName).clear('s');\ncy.get(_loginPageSelectors.default.userName).type(credentials.username);\ncy.get(_loginPageSelectors.default.password).clear('s');\ncy.get(_loginPageSelectors.default.password).type(credentials.password);\ncy.get(_loginPageSelectors.default.loginBtn).click();\nif (credentials.status === \"passed\") {\n  cy.get(_loginPageSelectors.default.successLoginMessage).should('have.text', 'Swag Labs');\n} else {\n  cy.get(_loginPageSelectors.default.failedLoginMsg).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');\n}",
+              "err": {},
+              "uuid": "4a144e44-e4d1-4902-a41a-b6861ff1b4eb",
+              "parentUUID": "fb3878de-78f8-4af8-b015-750226270cf4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "60a61f6a-a713-472b-aafa-6a716bf92a08",
+            "bf75166a-3197-41b0-a5dd-cc2b164db70a",
+            "d701dd63-4fbd-4e63-a0b7-15cf80e40b77",
+            "d4fa7d37-c0ed-4b21-aaf4-1cd39a204f79",
+            "f38ebad5-f110-4212-adaf-ec86c59f070e",
+            "4a144e44-e4d1-4902-a41a-b6861ff1b4eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10914,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
