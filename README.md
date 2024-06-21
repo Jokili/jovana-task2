@@ -79,6 +79,7 @@ npx cypress run
     |-- screenshots (images of the screen when test fails)
     |-- selectors
         |-- *.js (selector files)
+    |-- support
 |-- cypress.json (Cypress configuration)
 |-- package.json (dependencies and scripts)
 |-- README.md (project documentation) 
