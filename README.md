@@ -83,6 +83,8 @@ npx cypress run
 |-- cypress.json (Cypress configuration)
 |-- package.json (dependencies and scripts)
 |-- README.md (project documentation) 
- 9. Conclusion
+9. CI/CD 
+Every time a push or pull request is made to the main branch, the tests will run and the reports will be generated and uploaded as artifacts, making them accessible from the GitHub Actions interface.
+ 10. Conclusion
 This test automation framework provides a robust structure for writing and maintaining tests. By leveraging Cypress, App Actions Design Pattern, and Data-Driven Testing, the framework ensures scalability, maintainability, and comprehensive test coverage.
 
