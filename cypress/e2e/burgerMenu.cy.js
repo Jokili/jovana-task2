@@ -1,14 +1,13 @@
 import lpselectors from '../selectors/loginPageSelectors.js'
 import bmselectors from '../selectors/burgerMenuSelectors.js'
+import { login }  from '../support/commonActionLogin.js'
 
 
 describe('Burger menu', () => {
   beforeEach(() => {
-    cy.fixture('data.json').then(  (userData) => {
-      cy.visit(Cypress.env('baseUrl'))
-    cy.get(lpselectors.userName).type(userData[0].username);
-    cy.get(lpselectors.password).type(userData[0].password);
-    cy.get(lpselectors.loginBtn).click();})
+
+    login();
+    
   })
 
   
