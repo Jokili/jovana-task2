@@ -1,6 +1,8 @@
 export default {
-    product1: '[data-test="add-to-cart-sauce-labs-backpack"]',
-    product2: '[data-test="add-to-cart-sauce-labs-bike-light"]',
+    product1AddToCartButton: '[data-test="add-to-cart-sauce-labs-backpack"]',
+    product1RemoveButton: '[data-test="remove-sauce-labs-backpack"]',
+    product2AddToCartButton: '[data-test="add-to-cart-sauce-labs-bike-light"]',
+    product2RemoveButton: '[data-test="remove-sauce-labs-bike-light"]',
     cartButton: '[data-test="shopping-cart-link"]',
     product1NameAssertion: '[data-test="item-4-title-link"] > [data-test="inventory-item-name"]',
     product2NameAssertion: '[data-test="item-0-title-link"] > [data-test="inventory-item-name"]',
