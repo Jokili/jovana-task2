@@ -1,0 +1,11 @@
+
+{
+   "lowToHigh": "lohi",
+   "lowPrice": "$7.99",
+   "highToLow": "hilo",
+   "highPrice": "$49.99",
+   "aToZ": "az",
+   "aToZPrice": "$29.99",
+   "zToA": "za",
+   "zToAPrice": "$15.99"
+}

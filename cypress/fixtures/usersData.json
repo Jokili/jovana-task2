@@ -5,6 +5,10 @@
         "firstName": "Jovana",
         "lastName": "Jankovic",
         "postalCode": "12345",
-        "messageForCompletedOrder": "Thank you for your order!"
+        "messageForCompletedOrder": "Thank you for your order!",
+        "errorMesageForEmptyFieldFirstName": "Error: First Name is required",
+        "errorMesageForEmptyFieldLastName":"Error: Last Name is required",
+        "errorMesageForEmptyFieldPostalCode":"Error: Postal Code is required",
+        "urlForCartPage":"https://www.saucedemo.com/cart.html"
     }
 ]
