@@ -5,6 +5,8 @@ import { login }  from '../../support/commonActionLogin.js'
 describe('Add product to cart', () => {
   beforeEach(() => {
     login();
+    
+  
   })
 
   
