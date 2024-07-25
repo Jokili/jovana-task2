@@ -1,11 +1,11 @@
-import lpselectors from '../selectors/loginPageSelectors.js'
+import lpselectors from '../../selectors/loginPageSelectors.js'
 
 describe('Authentication', () => {
   beforeEach(() => {
     cy.visit(Cypress.env('baseUrl'))
   })
 
-  const credentialsList = require('../fixtures/users.json')
+  const credentialsList = require('../../fixtures/users.json')
 
 
   credentialsList.forEach((credentials) => {
@@ -43,6 +43,7 @@ describe('Authentication', () => {
 
     })
   })
+
 
   
 })
